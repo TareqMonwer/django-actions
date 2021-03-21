@@ -1,0 +1,6 @@
+[run]
+source = .
+omit = */.local*,*/migrations*,*asgi.py,*wsgi.py,*manage.py,*urls.py,*__init__.py,*apps.py,*admin.py,*tests.py,*settings.py
+
+[report]
+omit = */.local*,*/migrations*,*asgi.py,*wsgi.py,*manage.py,*urls.py,*__init__.py,*apps.py,*admin.py,*tests.py,*settings.py
