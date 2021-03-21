@@ -21,7 +21,7 @@ jobs:
     - name: Lint with flake8
       run: |
         pipenv shell
-        flake8 . --show-source --statistics
+        flake8
     - name: Test with coverage
       run: |
         pipenv shell
