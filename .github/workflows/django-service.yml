@@ -24,4 +24,5 @@ jobs:
         flake8 . --show-source --statistics
     - name: Test with coverage
       run: |
+        pipenv install coverage
         coverage run manage.py test
