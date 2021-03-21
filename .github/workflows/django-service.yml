@@ -20,9 +20,9 @@ jobs:
         pipenv install
     - name: Lint with flake8
       run: |
-        pipenv shell
-        flake8
+        pip install flake8
+        flake8 . --show-source --statistics
     - name: Test with coverage
       run: |
-        pipenv shell
+        pip install coverage
         coverage run manage.py test
