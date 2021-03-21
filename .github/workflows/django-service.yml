@@ -18,11 +18,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install pipenv
         pipenv install
+        pipenv shell
     - name: Lint with flake8
       run: |
-        pip install flake8
-        flake8 . --show-source --statistics
+        flake8
     - name: Test with coverage
       run: |
-        pip install coverage
         coverage run manage.py test
