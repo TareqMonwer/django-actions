@@ -35,6 +35,6 @@ jobs:
       run: |
         pipenv install --dev
         pipenv run flake8
-    - name: Test with coverage
+    - name: Run tests
       run: |
-        pipenv run coverage run manage.py test
+        pipenv run python manage.py test
